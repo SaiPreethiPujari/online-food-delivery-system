@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>FoodDash | Home</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">FoodDash 🍕</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="split-bill.html">Split Bill</a></li>
+            <li><a href="support.html">Support</a></li>
+        </ul>
+    </nav>
+<!--Header-->
+    <header
+        style="text-align: center; padding: 100px 20px; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1000&q=80'); background-size: cover; color: white;">
+        <h1>Deliciousness Delivered to Your Door</h1>
+        <p>Order from the best local restaurants with one click.</p>
+        <br>
+        <button class="btn" onclick="location.href='menu.html'">Order Now</button>
+    </header>
+    <div class="container" style="text-align: center; margin-top: 3rem;">
+        <h2 style="margin-bottom: 30px; color: var(--dark);">What would you like to do?</h2>
+
+        <div class="grid">
+            <div class="card action-card" onclick="location.href='menu.html'">
+                <div style="font-size: 3rem; margin-bottom: 15px;">🍽️</div>
+                <h3>Explore Menu</h3>
+                <p>Browse our delicious Indian dishes and start your order.</p>
+                <br>
+                <button class="btn">Go to Menu</button>
+            </div>
+
+            <div class="card action-card" onclick="location.href='split-bill.html'">
+                <div style="font-size: 3rem; margin-bottom: 15px;">💸</div>
+                <h3>Split the Bill</h3>
+                <p>Calculate and divide costs with your friends instantly.</p>
+                <br>
+                <button class="btn">Split Now</button>
+            </div>
+
+            <div class="card action-card" onclick="location.href='support.html'">
+                <div style="font-size: 3rem; margin-bottom: 15px;">💬</div>
+                <h3>Help & Support</h3>
+                <p>Chat with our AI assistant for any help with your order.</p>
+                <br>
+                
+                <button class="btn">Get Support</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

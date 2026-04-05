@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>FoodDash | Split Bill</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">FoodDash 🍕</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="split-bill.html">Split Bill</a></li>
+            <li><a href="support.html">Support</a></li>
+        </ul>
+    </nav>
+
+    <div class="container" style="max-width: 450px; margin-top: 4rem;">
+        <!-- REPLACE YOUR EXISTING CARD CONTENT WITH THIS -->
+<div class="card" style="padding: 2.5rem; text-align: center;">
+    <div style="font-size: 3rem; margin-bottom: 10px;">💳</div>
+    <h2 style="margin-bottom: 10px;">Split the Bill</h2>
+    
+    <!-- Total Amount Badge (Replacing the Input Box) -->
+    <div style="margin: 20px 0;">
+        <p style="font-weight: 600; font-size: 0.9rem; color: #666; margin-bottom: 8px;">Total Order Amount</p>
+        <div style="background: #fff5eb; color: #E67E22; font-size: 2.2rem; font-weight: bold; padding: 15px 25px; border-radius: 15px; display: inline-block; border: 2px dashed #E67E22;">
+            ₹<span id="total-display">0</span>
+        </div>
+        <!-- Hidden input so your existing calculate function still works -->
+        <input type="hidden" id="total" value="0">
+    </div>
+
+    <div style="margin-bottom: 20px;">
+        <button onclick="clearCart()" class="btn-outline">
+             Reset Total
+        </button>
+    </div>
+
+    <div style="text-align: left;">
+        <label style="font-weight: 600; font-size: 0.9rem;">Number of People</label>
+        <input type="number" id="people" placeholder="How many people?"
+            style="width:100%; padding:12px; margin:8px 0 20px 0; border: 1px solid #ddd; border-radius: 10px; outline-color: var(--primary);">
+    </div>
+
+    <button class="btn" onclick="calculateSplit()" style="width:100%; font-size: 1.1rem; padding: 15px;">
+        Calculate Share
+    </button>
+
+    <div id="result-box"
+        style="display: none; margin-top: 25px; padding: 15px; background: #f0fff4; border-radius: 10px; border: 1px solid #c6f6d5;">
+        <p style="font-size: 0.9rem; color: #2f855a; margin: 0;">Each Person Pays:</p>
+        <h2 id="result" style="color: #276749; margin: 5px 0 0 0;"></h2>
+    </div>
+</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
